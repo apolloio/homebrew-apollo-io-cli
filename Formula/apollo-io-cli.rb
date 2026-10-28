@@ -1,22 +1,22 @@
 class ApolloIoCli < Formula
   desc "Apollo.io CLI for searching people, companies, and more"
   homepage "https://github.com/apolloio/apollo-io-cli"
-  version "2.1.0"
+  version "2.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/apolloio/apollo-io-cli/releases/download/v#{version}/apollo-macos-arm64"
-      sha256 "521c32e79c2baf2f12ffd2af1bb768dff84accaabb41c165b0bb71dac7ac3fc9"
+      sha256 "b63080495e1cb4fd142dd98b9a37c3725c0088a9219fbbb40bc3ef2693bc4929"
     else
       url "https://github.com/apolloio/apollo-io-cli/releases/download/v#{version}/apollo-macos-x64"
-      sha256 "f91e880862ff4438622f244b3ebb7383e072b2e0455b553b2ccb89b03cf7bbaa"
+      sha256 "23970deab57b543b903cc2f63ce3f3bb4fd440de90ee5994a05e44722256bfdb"
     end
   end
 
   on_linux do
     url "https://github.com/apolloio/apollo-io-cli/releases/download/v#{version}/apollo-linux-x64"
-    sha256 "2f10c975f94066fe34526d6c9f8e2504d9dd12e4b21c8296a6732965fdbaaf8e"
+    sha256 "1be0d6d2f0e120d458ae03ce825c5a07f79e2868e95856aa30bac737c5b99001"
   end
 
   def install
